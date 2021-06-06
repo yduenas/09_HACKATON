@@ -23,6 +23,7 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
+		<link href="./css/prism.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -87,6 +88,505 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="album py-5 bg-light">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-1">
+						<!--INICIO-->
+						<!-- EJERCICIO 1-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 1</h5>
+									<p class="card-text">
+										Implementar un algoritmo que reciba 2 argumentos y los sume,
+										el resultado se deberá imprimir en pantalla.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function suma(argumento1, argumento2) {
+let texto = "El resulado de la suma es: ";
+let resultado = argumento1 + argumento2;
+return texto + resultado;
+}
+console.log(suma(1, 8));
+</code>
+										</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 1-->
+						<!-- EJERCICIO 2-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 2</h5>
+									<p class="card-text">
+										Un estudiante realiza 4 exámenes, calcular el promedio de
+										estos.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function promedioExamenes(values) {
+	let texto = "El promedio de los examenes es: ";
+	let sum = values.reduce((previous, current) => (current += previous));
+	let avg = sum / values.length;
+	return texto + avg;
+}
+let examenes = [5, 20, 15, 10];
+console.log(promedioExamenes(examenes));
+</code>
+										</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 2-->
+						<!-- EJERCICIO 3-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 3</h5>
+									<p class="card-text">Calcular el área de un rectángulo.</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function areaRectangulo(base, altura) {
+	let texto = "El de un rectangulo es: ";
+	let resultado = base * altura;
+	return texto + resultado;
+}
+console.log(areaRectangulo(2, 8));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 3-->
+						<!-- EJERCICIO 4-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 4</h5>
+									<p class="card-text">Calcular el área de un triángulo.</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function areaTriangulo(base, altura) {
+	let texto = "El de un Triangulo es: ";
+	let resultado = (base * altura) / 2;
+	return texto + resultado;
+}
+console.log(areaTriangulo(2, 8));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 4-->
+						<!-- EJERCICIO 5-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 5</h5>
+									<p class="card-text">
+										Calcular el área de una circunferencia
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function areaCircunferencia(radio) {
+	let texto = "El de la Circunferencia es: ";
+	//const pi = Math.PI; //3.1416;
+	let resultado = Math.PI * Math.pow(radio, 2);
+	return texto + resultado;
+}
+console.log(areaCircunferencia(10));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 5-->
+						<!-- EJERCICIO 6-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 6</h5>
+									<p class="card-text">
+										Determinar el sueldo semanal de un trabajador basándose en
+										sus horas trabajadas y su salario de hora hombre
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function sueldoBaseHoras(salario, horasTrabajadas) {
+	let texto = "El salario en base a las horas trabajadas es: ";
+	let diasDelMes = 30;
+	let horasDelDia = 8;
+	let resultado = (salario / diasDelMes / horasDelDia) * horasTrabajadas;
+	return texto + resultado;
+}
+console.log(sueldoBaseHoras(1000, 8));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 6-->
+						<!-- EJERCICIO 7-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 7</h5>
+									<p class="card-text">
+										Una modista, para realizar sus prendas de vestir, encarga
+										las telas al extranjero. Para cada pedido, tiene que
+										proporcionar las medidas de la tela en pulgadas, pero ella
+										generalmente las tiene en metros. Realice un algoritmo para
+										ayudar a resolver el problema, determinando cuantas pulgadas
+										debe pedir con base en los metros que requiere. Represéntelo
+										mediante el diagrama de flujo y el pseudocódigo (1 pulgada =
+										0.0254 m).
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function convertirMetrosAPulgadas(metros) {
+	let texto = "El equivalente de metros a pulgadas es: ";
+	let pulgada = 0.0254;
+	let resultado = metros / pulgada;
+	return texto + resultado;
+}
+console.log(convertirMetrosAPulgadas(1));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 7-->
+						<!-- EJERCICIO 8-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 8</h5>
+									<p class="card-text">
+										Una empresa importadora desea determinar cuántos dólares
+										puede adquirir con equis cantidad de dinero peruano
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function convertirSolesADolares(soles, tipodecambio) {
+	let texto = "La cantidad de dolares a adquirir es: ";
+	let resultado = soles / tipodecambio;
+	return texto + resultado;
+}
+console.log(convertirSolesADolares(10, 3.8));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 8-->
+						<!-- EJERCICIO 9-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 9</h5>
+									<p class="card-text">
+										Una empresa que contrata personal requiere determinar la
+										edad de las personas que solicitan trabajo, pero cuando se
+										les realiza la entrevista sólo se les pregunta el año en que
+										nacieron.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function edad(anioNacimiento) {
+	let texto = "La edad es: ";
+	let fecha = new Date();
+	let anioActual = fecha.getFullYear();
+	let resultado = anioActual - anioNacimiento;
+	return texto + resultado;
+}
+console.log(edad(1976));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 9-->
+						<!-- EJERCICIO 10-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 10</h5>
+									<p class="card-text">
+										Se tiene el nombre y la edad de tres personas. Se desea
+										saber el nombre y la edad de la persona de menor edad
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function menor(arrpersonas) {
+	let edad = [];
+	for (const p of arrpersonas.amigosArray) {
+		edad.push(p.edad);
+	}
+	//console.log(edad2);
+
+	let name = [];
+	for (const p of arrpersonas.amigosArray) {
+		name.push(p.name);
+	}
+	//console.log(name2);
+
+	let minimo = Math.min.apply(null, edad);
+	for (var i = 0; i <= 100; i++) {
+		if (edad[i] == minimo) {
+			console.log(
+				"El menor es " + name[i] + " con " + minimo + " años de edad."
+			);
+		}
+	}
+}
+
+let persona = {
+	amigosArray: [
+		{ name: "Lulu", edad: 20 },
+		{ name: "Ytalo", edad: 21 },
+		{ name: "Kathya", edad: 22 },
+	],
+};
+menor(persona);
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 10-->
+						<!-- EJERCICIO 11-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 11</h5>
+									<p class="card-text">
+										Se les dará un bono por antigüedad a los empleados de una
+										tienda. Si tienen un año, se les dará $100; si tienen 2
+										años, $200, y así sucesivamente hasta los 5 años. Para los
+										que tengan más de 5, el bono será de $1000. Realice un
+										algoritmo y represéntelo ,que permita determinar el bono que
+										recibirá un trabajador
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function bono(anios) {
+	let texto = "El bono a recibir por su tiempo en la compañia es: ";
+	let resultado = 0;
+	if (anios >= 1 && anios < 2) {
+		resultado = 100;
+	} else if (anios >= 2 && anios < 3) {
+		resultado = 200;
+	} else if (anios >= 3 && anios < 4) {
+		resultado = 300;
+	} else if (anios >= 4 && anios < 5) {
+		resultado = 400;
+	} else if (anios >= 5 && anios < 6) {
+		resultado = 500;
+	} else if (anios >= 6) {
+		resultado = 1000;
+	}
+	return texto + resultado;
+}
+console.log(bono(4));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 11-->
+						<!-- EJERCICIO 12-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 12</h5>
+									<p class="card-text">
+										Un profesor tiene un salario inicial de $1500, y recibe un
+										incremento de 10 % anual durante 6 años. ¿Cuál es su salario
+										al cabo de 6 años? ¿Qué salario ha recibido en cada uno de
+										los 6 años? Realice el algoritmo y representan la solución,
+										utilizando el ciclo apropiado
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function salario(sueldo, incrementoAnual, anios) {
+	let texto = "El salario en el año ";
+
+	var i;
+	for (i = 0; i <= anios; i++) {
+		console.log(texto + i + " " + sueldo);
+		sueldo = sueldo + sueldo * incrementoAnual;
+	}
+}
+salario(1500, 0.1, 6);
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 12-->
+						<!-- EJERCICIO 13-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 13</h5>
+									<p class="card-text">
+										Realice un algoritmo para leer las calificaciones de N
+										alumnos y determine el número de aprobados y reprobados
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function calificaciones(notas) {
+	let textoA = "La cantidad de aprobados es: ";
+	let textoD = "La cantidad de desaprobados es: ";
+	let cantidad = notas.length;
+	let notaAprobatoria = 11;
+	let aprobados = 0;
+	let desaprobados = 0;
+	var i;
+	for (i = 0; i <= cantidad - 1; i++) {
+		//	console.log(notas[i]);
+		if (notas[i] >= notaAprobatoria) {
+			aprobados += 1;
+		} else {
+			desaprobados += 1;
+		}
+	}
+	return console.log(textoA + aprobados + " y " + textoD + desaprobados);
+}
+
+let notas = [1, 2, 11, 20, 18, 19];
+calificaciones(notas);
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 13-->
+						<!-- EJERCICIO 14-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 14</h5>
+									<p class="card-text">
+										Una compañía, fabrica focos de colores (verdes, blancos y
+										rojos). Se desea contabilizar, de un lote de N focos, el
+										número de focos de cada color que hay en existencia.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function focos(verdes, blancos, rojos) {
+	let textoV = " La cantidad de verdes es: ";
+	let textoB = " La cantidad de blancos es: ";
+	let textoR = " La cantidad de rojos es: ";
+	let textoT = " Lo que da un total de: ";
+	let resultado = verdes + blancos + rojos;
+
+	return (
+		textoV + verdes + textoB + blancos + textoR + rojos + textoT + resultado
+	);
+}
+console.log(focos(10, 11, 22));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 14-->
+						<!-- EJERCICIO 15-->
+						<div class="col">
+							<div class="card shadow-sm">
+								<div class="card-body">
+									<h5 class="card-title">Ejercicio 15</h5>
+									<p class="card-text">
+										Realice un algoritmo para determinar si una persona puede
+										votar con base en su edad en las próximas elecciones.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<pre class="language-javascript line-numbers">
+<code>
+function votar(edad) {
+	let textoS = ` Si puede Votar ya que su edad es : ${edad} `;
+	let textoN = ` No puede Votar ya que su edad es : ${edad} `;
+	let resultado = "";
+	if (edad >= 18) {
+		resultado = textoS;
+	} else {
+		resultado = textoN;
+	}
+	return resultado;
+}
+console.log(votar(17));
+</code>
+									</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EJERCICIO 15-->
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="text-muted py-5">
@@ -94,7 +594,7 @@
 				<p class="float-end mb-1">
 					<a href="readme.md">Regresar al README</a>
 				</p>
-				<p class="mb-1">Examan HACKATON &copy; IDAT, 2021.</p>
+				<p class="mb-1">Examen HACKATON &copy; IDAT, 2021.</p>
 			</div>
 		</footer>
 
@@ -104,6 +604,7 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/prism.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
